@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/ll_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.example.contact.ContactView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:name="aa"
+                app:number="555"
+                />
+
+            <com.example.contact.ContactView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:name="aa"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/shape_button_add_bc"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
